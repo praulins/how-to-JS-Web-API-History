@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/trash/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="edit_sidemenu">
+        <div style="position: relative;min-height: 100%; overflow: hidden;">
+            <div class="logo">
+                
+            </div>
+            <ul class="sidemenu_1">
+                <li class="sidemenu_item">
+                    <span class="sidemenu_item_init" onClick="side_active(event, 0, 'addClass');">sidemenu item 1</span>
+                    <div class="submenu_content">
+                        <div class="header">
+                            <div class="back" onClick="side_active(event, 0, 'removeClass');">Back</div>
+                            <div class="forward" onClick="side_active(event, 1, 'addClass');">Next</div>                  
+                        </div>
+                        <div class="content">
+                            <p>1/1</p>
+                        </div>
+                    </div>
+                    <div class="submenu_content">
+                        <div class="header">
+                            <div class="back" onClick="side_active(event, 1, 'removeClass');">Back2</div>
+                            <div class="forward" onClick="side_active(event, 2, 'addClass');">Next2</div>
+                        </div>
+                        <div class="content">
+                            <p>1/2</p>
+                        </div>
+
+                    </div>
+                    <div class="submenu_content">
+                        <div class="header">
+                            <div class="back" onClick="side_active(event, 2, 'removeClass');">Back2</div>
+                        </div>
+                        <div class="content">
+                            <p>1/3</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="sidemenu_item">
+                    <span class="sidemenu_item_init" onClick="side_active(event, 0, 'addClass');">sidemenu item 2</span>
+                    <div class="submenu_content">
+                        <div class="header">
+                            <div class="back" onClick="side_active(event, 0, 'removeClass');">Back</div>
+                            <div class="forward" onClick="side_active(event, 1, 'addClass');">Next</div>                  
+                        </div>
+                        <div class="content">
+                            <p>2/1</p>
+                        </div>
+                    </div>
+                    <div class="submenu_content">
+                        <div class="header">
+                            <div class="back" onClick="side_active(event, 1, 'removeClass');">Back2</div>
+                            <div class="forward" onClick="side_active(event, 2, 'addClass');">Next2</div>
+                        </div>
+                        <div class="content">
+                            <p>2/2</p>
+                        </div>
+
+                    </div>
+                    <div class="submenu_content">
+                        <div class="header">
+                            <div class="back" onClick="side_active(event, 2, 'removeClass');">Back2</div>
+                        </div>
+                        <div class="content">
+                            <p>2/3</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="sidemenu_item">
+                    <span class="sidemenu_item_init" onClick="side_active(event, 0, 'addClass');">sidemenu item 3</span>
+                    <div class="submenu_content">
+                        <div class="header">
+                            <div class="back" onClick="side_active(event, 0, 'removeClass');">Back</div>
+                            <div class="forward" onClick="side_active(event, 1, 'addClass');">Next</div>                  
+                        </div>
+                        <div class="content">
+                            <p>3/1</p>
+                        </div>
+                    </div>
+                    <div class="submenu_content">
+                        <div class="header">
+                            <div class="back" onClick="side_active(event, 1, 'removeClass');">Back2</div>
+                            <div class="forward" onClick="side_active(event, 2, 'addClass');">Next2</div>
+                        </div>
+                        <div class="content">
+                            <p>3/2</p>
+                        </div>
+
+                    </div>
+                    <div class="submenu_content">
+                        <div class="header">
+                            <div class="back" onClick="side_active(event, 2, 'removeClass');">Back2</div>
+                        </div>
+                        <div class="content">
+                            <p>3/3</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>           
+        </div>
+    </div>
+    <div class="edit_content">
+        
+        <div class="header">
+            <div class="container">
+                <a href="#" class="header--logo">
+                    <img src="img/logo.png"/>
+                </a>
+                <ul class="menu">
+                    <li class="">
+                        <a class="" onclick="" href="?lol=1">Home</a>
+                    </li>
+                    <li class="">
+                        <a class="" onclick="" href="?lol=2">About</a>
+                    </li>
+                    <li class="">
+                        <a class="" onclick="" href="?lol=3">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-editable" data-id="1">
+            <div class="action">
+                <span class="delete" onclick="delete_object(event);">X</span>
+            </div>
+            <div class="wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Lorem ipsum dolor sit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non rhoncus diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque tincidunt ipsum in sem suscipit luctus. Cras varius pellentesque velit, non pulvinar lacus imperdiet eu. In laoreet feugiat blandit. Quisque a lacus vel turpis tincidunt faucibus. Phasellus vehicula eleifend lorem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-editable" data-id="2">
+            <div class="action">
+                <span class="delete" onclick="delete_object(event);">X</span>
+            </div>
+            <div class="wrap">
+                <div class="container text_3">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non rhoncus diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non rhoncus diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non rhoncus diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <div style="width:100%;background-color: red;min-height: 10px; position: relative; visibility: hidden;">
+            <p>My awesome footer that always on the bottom</p>
+        </div>
+        <div style="width:100%;background-color: blue;min-height: 10px; position: absolute;bottom: 0;">
+            <p>My awesome footer that always on the bottom</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        var sidemenu_ul_li = $('.edit_sidemenu .sidemenu_1').eq(0).children('.sidemenu_item');
+        var sidemenu_ul_li_array = [];
+
+        sidemenu_ul_li.each(function(index, item){
+            var submenu_content = $(item).children('.submenu_content');
+            var submenu_content_array = [];
+            submenu_content.each(function(index, item){
+                submenu_content_array[index] = $(item).hasClass('side_active');
+            });
+            sidemenu_ul_li_array[index] = submenu_content_array;
+        });
+
+        function page_contrnt_elements(){
+            var x = [];
+            $('.content-editable').each(function(index, item){
+                x[$(item).attr('data-id')] = $(item).hasClass('delete');
+            });
+            return x;
+        }
+
+
+
+        var stateObj = {
+            UId:0,
+            resolver: {
+                page_content: {function: 'page_content', element:page_contrnt_elements()},
+                sidemenu: {function: 'sidemenu', sidemenu_ul_li:sidemenu_ul_li_array, submenu_content:[]},
+            },
+        };
+        var stockStateObj = $.extend({}, stateObj);
+
+
+
+
+        var historyResolver = {
+            currentState: 0,
+            sidemenu : function (state){
+                state.sidemenu_ul_li.forEach(function callback(currentValue, index, array) {
+                    currentValue.forEach(function callback(currentValue2, index2, array2) {
+                        if(currentValue2===true){
+                            sidemenu_ul_li.eq(index).children('.submenu_content').eq(index2).addClass('side_active');
+                        }else{
+                            sidemenu_ul_li.eq(index).children('.submenu_content').eq(index2).removeClass('side_active');
+                        }
+                    });
+                });
+                return false;
+            },
+            page_content : function (state){
+
+                state.element.forEach(function callback(currentValue, index, array) {
+                    if(currentValue == true){
+                        $(".content-editable[data-id='"+index+"']").eq(0).addClass('delete');
+                    }else{
+                        $(".content-editable[data-id='"+index+"']").eq(0).removeClass('delete');
+                    }
+                });
+
+            }
+        };
+
+        window.onpopstate = function(event) {
+
+            if(event.state != null){
+                stateObj.resolver = event.state.resolver;
+         
+                for (var property in event.state.resolver) {
+                    if (event.state.resolver.hasOwnProperty(property)) {
+                        if(typeof historyResolver[property] == 'function'){
+                            historyResolver[property](event.state.resolver[property]);
+                        }
+                    }
+                }
+            }else{
+                for (var property in stockStateObj.resolver) {
+                    if (stockStateObj.resolver.hasOwnProperty(property)) {
+                        if(typeof historyResolver[property] == 'function'){
+                            historyResolver[property](stockStateObj.resolver[property]);
+                        }
+                    }
+                }
+            }
+        };
+
+        function delete_object(event){
+            replaceHistory();
+            var el = $(event.target).closest('.content-editable');
+            el.addClass('delete');
+            stateObj.resolver.page_content.element[el.attr('data-id')] = true;
+            return pushHistory();
+
+        }
+
+        function pushHistory(){
+            historyResolver.currentState++;
+            stateObj.UId = historyResolver.currentState;
+            history.pushState(stateObj, "", "");
+        }
+
+        function replaceHistory(){
+            history.replaceState(stateObj, "", "");
+        }
+
+
+        function side_active(event, $index, $action) {
+            replaceHistory();
+
+            var event_target = $(event.target).closest('.sidemenu_item');
+            if($action == 'addClass'){
+                event_target.children('.submenu_content').eq($index).addClass('side_active');
+                stateObj.resolver.sidemenu.sidemenu_ul_li[event_target.index()][$index] = true;
+            }else if($action == 'removeClass'){
+                event_target.children('.submenu_content').eq($index).removeClass('side_active');
+                stateObj.resolver.sidemenu.sidemenu_ul_li[event_target.index()][$index] = false;
+            }
+            return pushHistory();
+        }
+    </script>
+</body>
+</html>

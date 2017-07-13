@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+.edit_sidemenu {
+  background-color: lightgray;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+.edit_sidemenu .logo {
+  height: 150px;
+}
+.edit_sidemenu .sidemenu_1 {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  /*position: relative;*/
+  min-height: calc(100% - 150px);
+  background-color: red;
+}
+.edit_sidemenu .sidemenu_1 .sidemenu_item {
+  width: inherit;
+  background-color: white;
+}
+.edit_sidemenu .sidemenu_1 .sidemenu_item .submenu_content {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  width: inherit;
+  background-color: inherit;
+  min-height: 100%;
+}
+.edit_sidemenu .sidemenu_1 .sidemenu_item .submenu_content.side_active {
+  position: fixed;
+  background-color: yellow;
+  overflow-y: auto;
+  left: 0;
+  width: 200px;
+  height: 100%;
+}
+.edit_sidemenu .sidemenu_1 .sidemenu_item .submenu_content .header {
+  overflow: hidden;
+}
+.edit_sidemenu .sidemenu_1 .sidemenu_item .submenu_content .header .back {
+  float: left;
+}
+.edit_sidemenu .sidemenu_1 .sidemenu_item .submenu_content .header .forward {
+  float: right;
+}
+
+.edit_content {
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  min-height: 100%;
+  background-color: white;
+  position: relative;
+}
+.edit_content > .header {
+  background-color: orange;
+}
+.edit_content > .header .menu {
+  float: right;
+}
+.edit_content > .header .menu > li {
+  display: inline-block;
+}
+.edit_content > .content-editable {
+  position: relative;
+}
+.edit_content > .content-editable:hover {
+  box-shadow: inset 0 0 0 2px rgba(1, 1, 1, 0.5);
+}
+.edit_content > .content-editable:hover .action .delete {
+  opacity: 1;
+}
+.edit_content > .content-editable.delete {
+  display: none;
+}
+.edit_content > .content-editable > .action .delete {
+  pointer-events: visible;
+  position: absolute;
+  right: 4px;
+  top: 0;
+  opacity: 0;
+}
